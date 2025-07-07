@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+.score-meter {
+  margin: 32px auto 16px auto;
+  max-width: 340px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e3eaf3;
+  padding: 24px 18px 18px 18px;
+  text-align: center;
+}
+.score-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2d3a4a;
+}
+.meter-outer {
+  position: relative;
+  background: #eaf3fb;
+  border-radius: 16px;
+  height: 32px;
+  width: 100%;
+  margin: 0 auto 8px auto;
+  overflow: hidden;
+}
+.meter-inner {
+  height: 100%;
+  border-radius: 16px 0 0 16px;
+  transition: width 0.7s cubic-bezier(.4,2,.6,1);
+}
+.score-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+.meter-desc {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 6px;
+}
+@media (max-width: 600px) {
+  .score-meter {
+    padding: 14px 4px 12px 4px;
+  }
+  .meter-outer {
+    height: 24px;
+  }
+  .score-text {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}

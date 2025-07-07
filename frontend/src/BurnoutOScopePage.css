@@ -1,0 +1,100 @@
+.burnoutoscope-page {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e3eaf3;
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 32px 18px 24px 18px;
+  text-align: center;
+  position: relative;
+}
+.burnoutoscope-progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #eaf3fb;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+.burnoutoscope-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #7c4dff 60%, #4caf50 100%);
+  border-radius: 8px;
+  transition: width 0.5s cubic-bezier(.4,2,.6,1);
+}
+.burnoutoscope-question {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.burnoutoscope-qtext {
+  margin-top: 8px;
+}
+.burnoutoscope-scale-row, .burnoutoscope-mcq-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.burnoutoscope-scale-btn, .burnoutoscope-mcq-btn {
+  background: #eaf3fb;
+  color: #2d3a4a;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.burnoutoscope-scale-btn.selected, .burnoutoscope-mcq-btn.selected {
+  background: #7c4dff;
+  color: #fff;
+}
+.burnoutoscope-nav-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.burnoutoscope-nav-btn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.burnoutoscope-nav-btn:disabled {
+  background: #bdbdbd;
+  color: #fff;
+  cursor: not-allowed;
+}
+.burnoutoscope-confetti {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  animation: pop 1s;
+}
+@keyframes pop {
+  0% { transform: scale(0.2); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.burnoutoscope-break-prompt {
+  margin-top: 18px;
+  font-size: 1rem;
+  color: #7c4dff;
+}
+.burnoutoscope-break-prompt a {
+  color: #4caf50;
+  text-decoration: underline;
+  cursor: pointer;
+}

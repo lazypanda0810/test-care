@@ -1,0 +1,63 @@
+.gauge-meter-card {
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 4px 32px rgba(44,62,80,0.10);
+  padding: 32px 18px 18px 18px;
+  margin: 0 auto 18px auto;
+  width: 100%;
+  max-width: 340px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gauge-meter-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 18px auto;
+  width: 100%;
+  max-width: 320px;
+}
+.gauge-meter-label {
+  margin-top: -18px;
+  text-align: center;
+}
+.gauge-meter-score {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: 'Nunito', 'Segoe UI', Arial, sans-serif;
+  transition: color 0.4s;
+}
+.gauge-meter-desc {
+  font-size: 1.15rem;
+  color: #555;
+  margin-top: 6px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.gauge-meter-sublabel {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 2px;
+  font-weight: 500;
+}
+.gauge-meter-tooltip {
+  display: inline-block;
+  margin-left: 4px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .gauge-meter-card, .gauge-meter-root {
+    width: 98vw;
+    min-width: 0;
+    max-width: 100vw;
+    padding: 18px 2vw 12px 2vw;
+  }
+  .gauge-meter-score {
+    font-size: 1.5rem;
+  }
+}

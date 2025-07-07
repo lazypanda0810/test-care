@@ -1,0 +1,100 @@
+.anxiety-analyzer-page {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #e3eaf3;
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 32px 18px 24px 18px;
+  text-align: center;
+  position: relative;
+}
+.anxiety-analyzer-progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #eaf3fb;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+.anxiety-analyzer-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #7c4dff 60%, #4caf50 100%);
+  border-radius: 8px;
+  transition: width 0.5s cubic-bezier(.4,2,.6,1);
+}
+.anxiety-analyzer-question {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.anxiety-analyzer-qtext {
+  margin-top: 8px;
+}
+.anxiety-analyzer-scale-row, .anxiety-analyzer-mcq-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.anxiety-analyzer-scale-btn, .anxiety-analyzer-mcq-btn {
+  background: #eaf3fb;
+  color: #2d3a4a;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.anxiety-analyzer-scale-btn.selected, .anxiety-analyzer-mcq-btn.selected {
+  background: #7c4dff;
+  color: #fff;
+}
+.anxiety-analyzer-nav-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.anxiety-analyzer-nav-btn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.anxiety-analyzer-nav-btn:disabled {
+  background: #bdbdbd;
+  color: #fff;
+  cursor: not-allowed;
+}
+.anxiety-analyzer-confetti {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  animation: pop 1s;
+}
+@keyframes pop {
+  0% { transform: scale(0.2); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.anxiety-analyzer-break-prompt {
+  margin-top: 18px;
+  font-size: 1rem;
+  color: #7c4dff;
+}
+.anxiety-analyzer-break-prompt a {
+  color: #4caf50;
+  text-decoration: underline;
+  cursor: pointer;
+}

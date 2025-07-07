@@ -1,0 +1,9 @@
+# Backend requirements for MindCare (Flask)
+Flask
+flask-cors
+numpy
+pandas
+scikit-learn
+requests
+
+# Add any other backend-specific packages below
