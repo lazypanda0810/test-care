@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './BurnoutOScopePage.css';
 
 import GaugeScoreMeter from './GaugeScoreMeter';

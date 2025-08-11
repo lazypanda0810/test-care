@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './AnxietyAnalyzerPage.css';
 
 import GaugeScoreMeter from './GaugeScoreMeter';

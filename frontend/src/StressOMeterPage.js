@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './StressOMeterPage.css';
 
 import ScoreMeter from './ScoreMeter';
